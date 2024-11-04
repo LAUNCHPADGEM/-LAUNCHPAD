@@ -1,8 +1,7 @@
 let web3;
 let contract;
 
-//
-async function connectWallet() {
+//async function connectWallet() {
     if (typeof window.ethereum !== 'undefined') {
         web3 = new Web3(window.ethereum);
         await window.ethereum.request({ method: 'eth_requestAccounts' });
@@ -13,8 +12,7 @@ async function connectWallet() {
     }
 }
 
-//
-function initContract() {
+//function initContract() {
     const contractABI = [/*[
  {
   "inputs": [
